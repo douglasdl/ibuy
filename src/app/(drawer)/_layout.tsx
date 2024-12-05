@@ -5,7 +5,9 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 export default function DrawerLayout() {
   return (
     <GestureHandlerRootView>
-      <Drawer>
+      <Drawer screenOptions={{
+        title: "iBuy"
+      }}>
         <Drawer.Screen name="(tabs)" 
           options={{
             drawerLabel: "Inicio",
